@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matricula</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <link  rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.slider').slider();
+          $('.modal').modal();
+          $('select').material_select();
+          $('.sidenav').sidenav();
+          
+        });
+
+       
+</script>
+
+<header>
+          <nav class="indigo darken-4">
+            <div class="nav-wrapper container indigo darken-4">
+              <a href="#" class="brand-logo">Secretaria</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                
+               
+                <li><a href="index.html">Voltar</a></li>
+                
+              </ul>
+            </div>
+          </nav>
+
+
+          <ul id="slide-out" class="side-nav fixed indigo darken-4"><br>
+          <br>
+          
+          
+          <li><a href="#add_aluno" class="yellow-text text-accent-2 modal-trigger">Matricula</a></li>
+          
+
+                
+        </header>
+
+        
+<main>
+
+ 
+
+  <!-- Modal Structure -->
+  <div id="add_aluno" class="modal " style=" height: 100%;">
+    <div class="modal-content">
+      <h4>Matricula</h4>
+      
+
+       <!---FORMULARIO-------------------->
+  
+   <div class="row">
+    <form class="col s12">
+       
+        <div class="input-field col s6">
+          <input id="nome_add_aula" type="text" class="validate">
+          <label for="nome_add_aula">Nome Do Aluno</label>
+        </div>
+        <!-----------SELEÇÃO DE CLASSE------------------->
+        <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Escolha a Classe</option>
+            <option value="1">10ª Classe</option>
+            <option value="2">11ª Classe</option>
+            <option value="3">12ª Classe</option> 
+          </select>
+          <label>Classe</label>
+        </div> 
+        <!------------------------------------------------>
+        
+
+        <!-----------SELEÇÃO DE CURSO------------------->
+        <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Escolha o Curso</option>
+            <option value="1">Técnico de Informática</option>
+            <option value="2">Contabilidade e Gestão</option>
+            <option value="3">Energia e Instalações electrica</option>
+
+            <option value="4">Desenho Projectista</option>
+            <option value="5">Mecanica</option> 
+          </select>
+          <label>Cursos</label>
+        </div>
+        <!------------------------------------------------> 
+
+                
+        <div class="file-field input-field col 12">
+          <div class="btn">
+            <span>Arquivo</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Carrega o seu Bilhete de Identidade">
+          </div>
+        </div>
+
+        <div class="file-field input-field col 18 ">
+          <div class="btn">
+            <span>Arquivo</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Carrega o seu Certificado">
+          </div>
+        </div>
+     
+
+        <a href="#!" class="btn green" style="width: 60%;">Finalizar a Matricula</a>
+      </div>
+    </form>
+    <!---FORMULARIO-------------------->
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+</main>  
+
+
+  <!-- Modal Structure -->
+  
+
+</body>
+</html>
